@@ -1,9 +1,4 @@
 (function(){
-var root=document.documentElement,tt=document.getElementById('tt');
-function theme(t){root.setAttribute('data-theme',t);tt.textContent=t==='dark'?'Light mode':'Dark mode';try{localStorage.setItem('wn-theme',t)}catch(e){}}
-var st='dark';try{st=localStorage.getItem('wn-theme')||'dark'}catch(e){}
-theme(st==='light'?'light':'dark');
-tt.addEventListener('click',function(){theme(root.getAttribute('data-theme')==='dark'?'light':'dark')});
 
 var pgs=[].slice.call(document.querySelectorAll('.pg')),ls=document.querySelectorAll('.mn a'),cta=document.getElementById('cta');
 function route(){
